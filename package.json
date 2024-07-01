@@ -1,0 +1,20 @@
+{
+  "name": "adressproject",
+  "version": "1.0.0",
+  "description": "Este projeto é uma aplicação de gerenciamento de endereços que permite criar, visualizar, editar e excluir registros de endereços. Foi desenvolvido como parte de um teste para uma vaga de estágio desenvolvedor. A aplicação utiliza Node.js com Express no backend e Prisma ORM para gerenciamento do banco de dados, no frontend foi utilizado React.js com Vite.",
+  "main": "index.js",
+  "scripts": {
+      "install:client": "cd client && npm install",
+      "install:server": "cd server && npm install",
+      "start:client": "cd client && npm run dev",
+      "start:server": "cd server && npm run dev",
+      "install": "npm-run-all --parallel install:*",
+      "start": "npm-run-all --parallel start:*"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
