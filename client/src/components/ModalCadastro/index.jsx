@@ -4,7 +4,7 @@ import { useModalCadastroController } from './modalCadastro.controller'
 export default function ModalCadastroEndereco() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const { errors, handleSubmit, onSubmit, register } =
+  const { errors, handleSubmit, onSubmit, register, handleCepChange, cep } =
     useModalCadastroController(setIsOpen)
 
   return (
@@ -72,6 +72,8 @@ export default function ModalCadastroEndereco() {
                   className={`w-full p-2 border ${
                     errors.cep ? 'border-red-500' : 'border-gray-300'
                   } rounded`}
+                  onChange={handleCepChange}
+                  value={cep}
                 />
                 {errors.cep && (
                   <p className="text-red-500">{errors.cep.message}</p>
