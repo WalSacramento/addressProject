@@ -20,7 +20,7 @@ export default function ModalUpdateEndereco(id) {
 
       {isOpen && (
         <div className="fixed inset-0 z-50 overflow-auto flex w-screen bg-black bg-opacity-50 ">
-          <div className="relative p-8 w-6/12 m-auto flex-col flex rounded-lg bg-white">
+          <div className="relative p-8 w-4/12 m-auto flex-col flex rounded-lg bg-white">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl">Cadastro de Endereço</h2>
               <button onClick={() => setIsOpen(false)}>X</button>
@@ -128,7 +128,7 @@ export default function ModalUpdateEndereco(id) {
               <div className="flex items-center justify-end w-full">
                 <button
                   type="submit"
-                  className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700"
+                  className="border rounded-lg p-2 bg-black text-white hover:bg-white hover:text-black hover:border-black"
                 >
                   Salvar
                 </button>
